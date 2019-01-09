@@ -1,0 +1,97 @@
+#container{
+    font-family: helvetica;
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr 4fr;
+grid-template-rows: 12fr 1fr;
+grid-template-areas:
+"f c"
+"f i"
+}
+
+#friends {
+    padding: 5px;
+    background-color: purple;
+    grid-area: f;
+    display: grid;
+   grid-template-rows: 1fr 4fr;
+    
+}
+
+.names {
+    grid-template-rows: repeat(4, 1fr);
+    display: grid;
+}
+
+.names p{
+    background-color: rgb(168, 114, 231);
+   display:grid;
+   height: 20px;
+   margin: 5px;
+   padding: 5px;
+}
+
+#chat{
+    background-color: lightgray;
+    grid-area: c;
+    display: grid;
+    
+   
+}
+
+
+.text{
+
+    font-size: 30px;
+    display: inline;
+
+
+    
+}
+
+.time {
+    display: inline;
+   
+}
+
+.right {
+    justify-self: right;
+    background-color:lightgreen;
+}
+
+.left {
+    justify-self: left;
+    background-color: grey;
+    
+}
+
+.text-container {
+    margin: 10px;
+    grid-template-columns: 1fr 1fr 4fr;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+
+
+#input {
+    grid-template-columns: repeat (5, 1fr);
+    grid-template-areas: 
+    "x x x x s";
+    display: grid;
+}
+
+input{
+    grid-area: x;
+    display: grid;
+}
+#send {
+    background-color: purple;
+display: grid;
+grid-area: s;
+align-content: center;
+justify-content: center;
+}
+
